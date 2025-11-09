@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90">
+
+    <!-- Caras flotantes -->
+
+    <ImageView
+        android:id="@+id/messi_face_top_left"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="96dp"
+        android:rotation="90"
+        android:src="@drawable/messi_face"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_bottom_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_3"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="600dp"
+        android:rotation="159"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="244dp"
+        android:rotation="-17"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_13"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="144dp"
+        android:rotation="73"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_14"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="468dp"
+        android:rotation="-39"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_2"
+        android:layout_width="77dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="156dp"
+        android:rotation="-43"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_7"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="592dp"
+        android:rotation="21"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_8"
+        android:layout_width="76dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="52dp"
+        android:rotation="201"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_10"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="388dp"
+        android:rotation="56"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_11"
+        android:layout_width="74dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="392dp"
+        android:rotation="210"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Título -->
+
+    <!-- Botón de Play -->
+
+    <ImageView
+        android:id="@+id/messi_face_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="24dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="76dp"
+        android:rotation="0"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="!! SAVE MESSI !!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/playButton"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:text="Play"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:layout_width="107dp"
+        android:layout_height="77dp"
+        android:src="@drawable/ic_play_arrow"
+        app:tint="#000000"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
