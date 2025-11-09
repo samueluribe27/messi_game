@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90">
+
+    <!-- ======= Encabezado ======= -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bienvenido"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecordValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="76"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ======= Campo de nombre ======= -->
+    <EditText
+        android:id="@+id/etNombreJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Nombre del jugador"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <!-- ======= Botones ======= -->
+
+    <ImageView
+        android:id="@+id/messi_face_8"
+        android:layout_width="61dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="364dp"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_18"
+        android:layout_width="109dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="332dp"
+        android:rotation="201"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_19"
+        android:layout_width="73dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="64dp"
+        android:rotation="201"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="4dp"
+        android:rotation="-43"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_9"
+        android:layout_width="120dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginBottom="384dp"
+        android:rotation="249"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_15"
+        android:layout_width="76dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="16dp"
+        android:rotation="-120"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_16"
+        android:layout_width="66dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="516dp"
+        android:rotation="111"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_17"
+        android:layout_width="76dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="488dp"
+        android:rotation="201"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="316dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNombreJugador">
+
+        <Button
+            android:id="@+id/btnJugar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button2"
+            android:text="JUGAR"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPuntajes"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button2"
+            android:text="PUNTAJES"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnOpciones"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button2"
+            android:text="OPCIONES"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
