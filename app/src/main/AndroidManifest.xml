@@ -10,6 +10,52 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Messi_game" />
+        tools:targetApi="31">
+
+        <!-- MainActivity - Pantalla de Inicio (LAUNCHER) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- HomeActivity - Menú Principal con Jugar, Puntajes y Créditos -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- DificultadActivity - Selección de Dificultad -->
+        <activity
+            android:name=".DificultadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- JuegoActivity - Pantalla del Juego -->
+        <activity
+            android:name=".JuegoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DificultadActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DificultadActivity" />
+        </activity>
+
+    </application>
 
 </manifest>

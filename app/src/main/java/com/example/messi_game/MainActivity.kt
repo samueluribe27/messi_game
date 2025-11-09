@@ -1,5 +1,6 @@
 package com.example.messi_game
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.messi_game.databinding.ActivityMainBinding
@@ -13,8 +14,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.playButton.setOnClickListener {
-            // Aquí puedes lanzar otra Activity o iniciar el juego
+        // Configurar el botón que abre HomeActivity
+        // Asume que tu botón en activity_main.xml se llama btnIniciar o btnStart
+        // Ajusta el nombre según tu layout
+        binding.startbtn.setOnClickListener {
+            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
 }

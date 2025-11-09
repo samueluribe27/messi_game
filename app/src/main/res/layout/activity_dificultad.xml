@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90">
+
+    <!-- ======= Barra superior ======= -->
+
+    <ImageView
+        android:id="@+id/messi_face_29"
+        android:layout_width="82dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="-103"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_20"
+        android:layout_width="74dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="456dp"
+        android:rotation="-43"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_22"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="456dp"
+        android:rotation="-231"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_23"
+        android:layout_width="61dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="24dp"
+        android:rotation="-47"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_24"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="16dp"
+        android:rotation="-171"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_25"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="4dp"
+        android:rotation="30"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_26"
+        android:layout_width="61dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="368dp"
+        android:rotation="21"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_30"
+        android:layout_width="70dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="364dp"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_27"
+        android:layout_width="47dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="536dp"
+        android:rotation="137"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_28"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="536dp"
+        android:rotation="64"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/messi_face_21"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="456dp"
+        android:rotation="86"
+        android:src="@drawable/messi_face"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/men"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRecordValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/_76"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ======= Campo de nombre ======= -->
+    <EditText
+        android:id="@+id/etNombreJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/nombre_del_jugador"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <!-- ======= Título ======= -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/dificultad"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNombreJugador" />
+
+    <!-- ======= Botones de dificultad ======= -->
+    <LinearLayout
+        android:id="@+id/llDificultades"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo">
+
+        <Button
+            android:id="@+id/btnFacil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button2"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/f_cil_npuntaje_a_alcanzar_20"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDificil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button2"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/dif_cil_npuntaje_a_alcanzar_40"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnExperto"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button2"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/experto_npuntaje_a_alcanzar_60"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

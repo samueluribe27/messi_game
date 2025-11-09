@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuegoActivity">
+
+    <!-- Header con información del juego -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#80000000"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Botón Menú -->
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀ Menú"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <!-- Nombre del jugador -->
+        <TextView
+            android:id="@+id/tvNombreJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugador"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Record y Puntaje -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="1dp"/>
+
+        <!-- Puntaje actual -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntaje"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvPuntaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Área de juego donde caerán los balones y se moverá Messi -->
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/material_dynamic_neutral90"
+        app:layout_constraintBottom_toTopOf="@id/layoutControles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader">
+
+        <!-- Aquí se agregarán dinámicamente los balones y Messi -->
+        <ImageView
+            android:id="@+id/ivMessi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Messi"
+            android:src="@drawable/messi_face" />
+
+    </FrameLayout>
+
+    <!-- Controles (SeekBar para mover a Messi) -->
+    <LinearLayout
+        android:id="@+id/layoutControles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <SeekBar
+            android:id="@+id/seekBarMover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@android:color/white"
+            android:thumbTint="@android:color/white"/>
+
+    </LinearLayout>
+
+    <!-- Game Over Overlay (inicialmente oculto) -->
+    <LinearLayout
+        android:id="@+id/layoutGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#CC000000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡GAME OVER!"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvPuntajeFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntaje: 0"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvMensajeGameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Nuevo récord!"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnReintentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reintentar"
+            android:textSize="20sp"
+            android:paddingHorizontal="32dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnMenuPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú Principal"
+            android:textSize="20sp"
+            android:paddingHorizontal="32dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

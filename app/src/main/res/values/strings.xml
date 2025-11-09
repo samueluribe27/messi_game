@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">messi_game</string>
+    <string name="experto_npuntaje_a_alcanzar_60">EXPERTO\nPuntaje a alcanzar 60</string>
+    <string name="dif_cil_npuntaje_a_alcanzar_40">DIFÍCIL\nPuntaje a alcanzar 40</string>
+    <string name="f_cil_npuntaje_a_alcanzar_20">FÁCIL\nPuntaje a alcanzar 20</string>
+    <string name="dificultad">DIFICULTAD</string>
+    <string name="nombre_del_jugador">Nombre del jugador</string>
+    <string name="_76">76</string>
+    <string name="record">Record</string>
+    <string name="men">‹ Menú</string>
 </resources>
