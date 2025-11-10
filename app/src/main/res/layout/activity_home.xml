@@ -169,7 +169,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/rounded_button2"
             android:text="JUGAR"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <Button
@@ -179,7 +179,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/rounded_button2"
             android:text="PUNTAJES"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <Button
@@ -188,7 +188,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button2"
             android:text="CREDITOS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </LinearLayout>
 
