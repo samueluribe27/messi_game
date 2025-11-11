@@ -1,33 +1,3 @@
-### Android/Gradle
-.gradle/
-build/
-app/build/
-captures/
-.externalNativeBuild/
-.cxx/
-local.properties
-*.apk
-*.ap_
-*.aab
-
-### IntelliJ / Android Studio
-.idea/
-app/.idea/
-*.iml
-*.ipr
-*.iws
-
-### Kotlin/Java
-.kotlin/
-out/
-
-### OS files
-.DS_Store
-Thumbs.db
-
-### Logs
-*.log
-
 *.iml
 .gradle
 /local.properties
@@ -43,3 +13,6 @@ Thumbs.db
 .externalNativeBuild
 .cxx
 local.properties
+.idea/
+app/.idea/
+.kotlin/
