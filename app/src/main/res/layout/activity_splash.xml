@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp">
+
+        <!-- Logo central con múltiples iconos -->
+        <FrameLayout
+            android:id="@+id/splashLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0">
+
+            <!-- Iconos decorativos alrededor -->
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="-20dp"
+                android:layout_marginTop="-10dp"
+                android:alpha="0.3"
+                android:contentDescription="@string/home_face_content_description"
+                app:svg="@raw/messi_icon" />
+
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="-24dp"
+                android:layout_marginTop="-8dp"
+                android:alpha="0.35"
+                android:contentDescription="@string/home_face_content_description"
+                app:svg="@raw/messi_icon" />
+
+            <!-- Logo principal -->
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/home_face_content_description"
+                app:svg="@raw/messi_icon" />
+
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="-16dp"
+                android:layout_marginBottom="-6dp"
+                android:alpha="0.32"
+                android:contentDescription="@string/home_face_content_description"
+                app:svg="@raw/messi_icon" />
+
+            <com.caverock.androidsvg.SVGImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="-20dp"
+                android:layout_marginBottom="-10dp"
+                android:alpha="0.28"
+                android:contentDescription="@string/home_face_content_description"
+                app:svg="@raw/messi_icon" />
+        </FrameLayout>
+
+        <!-- Título del juego -->
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!! SAVE MESSI !!"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="32dp"
+            android:alpha="0" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:id="@+id/splashSubtitle" />
+
+        <!-- Indicador de carga (opcional) -->
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="40dp"
+            android:indeterminateTint="#1A1A1A"
+            style="?android:attr/progressBarStyle" />
+    </LinearLayout>
+</FrameLayout>
