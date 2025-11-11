@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#15000000">
+    <item>
+        <layer-list>
+            <!-- Shadow layer -->
+            <item
+                android:top="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:bottom="2dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#10000000" />
+                    <corners android:radius="20dp" />
+                </shape>
+            </item>
+            <!-- Button layer -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#FFFFFF" />
+                    <stroke
+                        android:width="2dp"
+                        android:color="#1A1A1A" />
+                    <corners android:radius="20dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>
