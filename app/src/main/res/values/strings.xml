@@ -1,11 +1,47 @@
 <resources>
     <string name="app_name">messi_game</string>
-    <string name="experto_npuntaje_a_alcanzar_60">EXPERTO\nPuntaje a alcanzar 60</string>
-    <string name="dif_cil_npuntaje_a_alcanzar_40">DIFÍCIL\nPuntaje a alcanzar 40</string>
-    <string name="f_cil_npuntaje_a_alcanzar_20">FÁCIL\nPuntaje a alcanzar 20</string>
-    <string name="dificultad">DIFICULTAD</string>
-    <string name="nombre_del_jugador">Nombre del jugador</string>
-    <string name="_76">76</string>
-    <string name="record">Record</string>
-    <string name="men">‹ Menú</string>
+    <string name="home_section_label">Home</string>
+    <string name="home_welcome_title">Bienvenido</string>
+    <string name="home_player_label">Nombre del jugador</string>
+    <string name="home_player_name_placeholder">Invitado</string>
+    <string name="home_record_label">Record</string>
+    <string name="home_record_placeholder">76</string>
+    <string name="home_play_button">Jugar</string>
+    <string name="home_scores_button">Puntajes</string>
+    <string name="home_credits_button">Créditos</string>
+    <string name="home_face_content_description">Icono decorativo de Messi</string>
+    <string name="credits_toolbar_title">Créditos</string>
+    <string name="credits_title">Créditos</string>
+    <string name="credits_section_development">Desarrollo de aplicación</string>
+    <string name="credits_section_design">Diseño UI/UX</string>
+    <string name="credits_developer_name_samuel">Samuel Uribe</string>
+    <string name="credits_developer_name_jose">Jose Mejía</string>
+    <string name="credits_developer_role">Desarrollador</string>
+    <string name="credits_designer_role">Diseñador UI/UX</string>
+    <string name="credits_author_samuel">Samuel Uribe</string>
+    <string name="credits_author_jose">Jose Mejía</string>
+    <string name="credits_navigation_content_description">Volver al menú</string>
+    
+    <!-- Scores Screen -->
+    <string name="scores_toolbar_title">Menú</string>
+    <string name="scores_title">Puntajes</string>
+    <string name="scores_level_label">Nivel:</string>
+    <string name="scores_easy">Fácil</string>
+    <string name="scores_medium">Difícil</string>
+    <string name="scores_hard">Experto</string>
+    
+    <!-- Difficulty Screen -->
+    <string name="difficulty_toolbar_title">Menú</string>
+    <string name="difficulty_title">DIFICULTAD</string>
+    <string name="difficulty_easy">FÁCIL</string>
+    <string name="difficulty_medium">DIFÍCIL</string>
+    <string name="difficulty_hard">EXPERTO</string>
+    <string name="difficulty_score_to_reach">Puntaje a alcanzar</string>
+    
+    <!-- Game Screen -->
+    <string name="game_toolbar_title">Menú</string>
+    <string name="game_score_label">Balones esquivados:</string>
+    <string name="game_ball_description">Balón de fútbol</string>
+    <string name="game_face_description">Cara de Messi</string>
+    <string name="game_instruction">¡Esquiva los balones!</string>
 </resources>

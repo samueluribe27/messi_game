@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_main_gradient"
+    android:fitsSystemWindows="true">
+
+    <!-- Contenedor centrado con ancho máximo para tablets -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="720dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="48dp">
+
+            <!-- Header Card con información del jugador -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/headerCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="32dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_welcome_title"
+                        android:textSize="@dimen/text_title_large"
+                        android:textStyle="bold"
+                        android:textColor="#1A1A1A"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="-0.025"
+                        android:layout_marginBottom="@dimen/spacing_large" />
+
+                    <!-- Stats Container -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <!-- Player Name Chip -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:layout_marginEnd="16dp"
+                            app:cardCornerRadius="18dp"
+                            app:cardElevation="3dp"
+                            app:cardBackgroundColor="#F8F8F8">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/home_player_label"
+                                    android:textSize="@dimen/text_caption"
+                                    android:textColor="#757575"
+                                    android:textAllCaps="true"
+                                    android:letterSpacing="0.1"
+                                    android:fontFamily="sans-serif-medium" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="8dp">
+
+                                    <TextView
+                                        android:id="@+id/playerNameValue"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/home_player_name_placeholder"
+                                        android:textSize="@dimen/text_body_large"
+                                        android:textStyle="bold"
+                                        android:textColor="#1A1A1A"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:letterSpacing="-0.01" />
+
+                                    <ImageView
+                                        android:id="@+id/editPlayerNameIcon"
+                                        android:layout_width="@dimen/icon_small"
+                                        android:layout_height="@dimen/icon_small"
+                                        android:layout_marginStart="10dp"
+                                        android:src="@android:drawable/ic_menu_edit"
+                                        android:contentDescription="Editar nombre"
+                                        app:tint="#757575"
+                                        android:alpha="0.7" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Record Chip -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:layout_marginStart="16dp"
+                            app:cardCornerRadius="18dp"
+                            app:cardElevation="3dp"
+                            app:cardBackgroundColor="#F8F8F8">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/home_record_label"
+                                    android:textSize="@dimen/text_caption"
+                                    android:textColor="#757575"
+                                    android:textAllCaps="true"
+                                    android:letterSpacing="0.1"
+                                    android:fontFamily="sans-serif-medium" />
+
+                                <TextView
+                                    android:id="@+id/recordValue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/home_record_placeholder"
+                                    android:textSize="@dimen/text_body_large"
+                                    android:textStyle="bold"
+                                    android:textColor="#1A1A1A"
+                                    android:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Canvas con iconos SVG -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/facesCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="320dp"
+                android:layout_marginBottom="@dimen/spacing_large"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#FCFCFC">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="32dp">
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:alpha="0.25"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:alpha="0.2"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:alpha="0.4"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginStart="12dp"
+                        android:alpha="0.22"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="8dp"
+                        android:alpha="0.28"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="20dp"
+                        android:alpha="0.26"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+
+                    <com.caverock.androidsvg.SVGImageView
+                        android:id="@+id/faceBottomEnd"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="18dp"
+                        android:alpha="0.28"
+                        android:contentDescription="@string/home_face_content_description"
+                        app:svg="@raw/messi_icon" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Botones de acción -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/playButton"
+                    style="@style/PrimaryButton"
+                    android:text="@string/home_play_button"
+                    android:layout_marginBottom="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/scoresButton"
+                    style="@style/OutlineButton"
+                    android:text="@string/home_scores_button"
+                    android:layout_marginBottom="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/creditsButton"
+                    style="@style/OutlineButton"
+                    android:text="@string/home_credits_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

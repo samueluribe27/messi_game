@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Sizes - Tablet (más pequeños proporcionalmente) -->
+    <dimen name="text_title_large">42sp</dimen>
+    <dimen name="text_title_medium">32sp</dimen>
+    <dimen name="text_title_small">28sp</dimen>
+    <dimen name="text_body_large">20sp</dimen>
+    <dimen name="text_body_medium">18sp</dimen>
+    <dimen name="text_body_small">16sp</dimen>
+    <dimen name="text_caption">14sp</dimen>
+    <dimen name="text_tiny">12sp</dimen>
+    
+    <!-- Game Score -->
+    <dimen name="text_game_score">96sp</dimen>
+    <dimen name="text_game_over_title">52sp</dimen>
+    <dimen name="text_game_over_score">32sp</dimen>
+    
+    <!-- Spacing (más amplio en tablets) -->
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_medium">24dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_xlarge">48dp</dimen>
+    
+    <!-- Card -->
+    <dimen name="card_corner_radius">32dp</dimen>
+    <dimen name="card_elevation">12dp</dimen>
+    
+    <!-- Button -->
+    <dimen name="button_height">72dp</dimen>
+    <dimen name="button_corner_radius">36dp</dimen>
+    
+    <!-- Icon -->
+    <dimen name="icon_small">28dp</dimen>
+    <dimen name="icon_medium">64dp</dimen>
+    <dimen name="icon_large">120dp</dimen>
+    <dimen name="icon_xlarge">180dp</dimen>
+</resources>
