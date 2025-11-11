@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
     private fun configurarBotones() {
         // Botón JUGAR - Navega a DificultadActivity
         binding.btnJugar.setOnClickListener {
-            val intent = Intent(this@HomeActivity, DificultadActivity::class.java)
+            val intent = Intent(this@HomeActivity, DifficultyActivity::class.java)
             startActivity(intent)
         }
 

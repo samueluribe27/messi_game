@@ -26,24 +26,24 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Messi_game" />
         <activity
             android:name=".DifficultyActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Messi_game" />
         <activity
             android:name=".GameActivity"
-            android:exported="false"
+            android:exported="true"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.Messi_game" />
         <activity
             android:name=".ScoresActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Messi_game" />
         <activity
             android:name=".CreditsActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Messi_game" />
     </application>
 
